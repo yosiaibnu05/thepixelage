@@ -1,0 +1,30 @@
+.section-about {
+    height: 100vh;
+    padding: 120px 0px;
+  
+    .text-wrapper {
+        display: flex;
+        flex-direction: column;
+      
+        h1 {
+            font-size: 4em;
+            color: var(--heading-color);
+            font-weight: 600;
+            margin-left: 35px;
+        }
+
+        span {
+            font-size: 1.8em;
+            line-height: 1.2333333333333333;
+            color: var(--heading-color);
+            font-weight: 500;
+        }
+
+       
+        > * {
+            opacity: 0;
+        }
+
+    }
+    
+}

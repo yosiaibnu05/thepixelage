@@ -1,0 +1,24 @@
+.section-photos {   
+    margin-bottom: 50vh;
+
+    .photo-item {
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        margin-bottom: 20vh;
+
+        &:nth-child(even) img {
+            float: right;
+        }
+
+        &:last-child img {
+            margin-right: 50px;
+        }
+
+        .box {
+            background-color: red;
+            height: 500px;
+            width: 120px;
+        }
+    }
+}

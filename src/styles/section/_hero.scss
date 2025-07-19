@@ -1,0 +1,38 @@
+.section-hero {
+    min-height: 100vh;
+    background-image: url('../../assets/img/background-home.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    .text-wrapper {
+        padding: 0px 200px 0px 0px;
+        margin-top: 20vh;
+        display: flex;
+        align-items:start;
+        justify-content: start;
+        flex-direction: column;
+        
+        h1 {
+            margin-bottom: 0px;
+            line-height: 100%;
+            color: var(--heading-color);
+        }
+        h1 span {
+            font-size: 60px;
+        }
+
+        .word {
+            display: inline-block;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+ 
+    }
+
+    .lottie-wrapper {
+        margin-top: 2rem;
+        width: 100%;
+    }
+    
+}

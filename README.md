@@ -1,4 +1,4 @@
-# Frontend Technical Test – Animated Hero Section
+# Frontend Technical Test – Animated Page
 
 ## 🔗 Live Demo
 You can view the live version hosted at:  

@@ -7,8 +7,7 @@ import Photos from '@/components/Photos'
 import Milestone from '@/components/Milestone'
 import Footer from '@/components/Footer'
 
-export default function singlePage() {
-
+export default function SinglePage() {
   useLenis()
 
   return (

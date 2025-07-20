@@ -2,7 +2,7 @@
 
 ## 🔗 Live Demo
 You can view the live version hosted at:  
-👉 [https:/ibnu.fun/](https://ibnu.fun/)
+👉 [https://thepixelage.vercel.app/](https://thepixelage.vercel.app/)
 
 This project is a technical test implementation of a modern, animated single-page section using:
 

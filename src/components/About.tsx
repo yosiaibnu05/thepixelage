@@ -27,7 +27,7 @@ useEffect(() => {
                 trigger: '.section-about',
                 start: 'top 50%',
                 toggleActions: 'play none none none',
-                once: true, // supaya cuma sekali jalan
+                once: true, 
             }
         }
     )
@@ -41,7 +41,7 @@ useEffect(() => {
         pin: '.section-about .text-wrapper',
     });
       
-      // GSAP: Text slide animation on scroll
+      // ------  Text slide animation on scroll ------
       gsap.fromTo(
         '.section-about .text-wrapper',
         {
@@ -61,7 +61,7 @@ useEffect(() => {
         }
       );
 
-      // GSAP: Shape fade-in on scroll
+     // ------  Shape fade-in on scroll ------
       gsap.fromTo(
         '.shape-appearance',
         {
@@ -93,8 +93,8 @@ useEffect(() => {
             <span>Shaping Our</span>
             <h1>Legacy</h1>
             <a href="" className="btn btn-theme shape-appearance">
-              <i className="shape" />
-              Trace Our Milestones
+                <i className="shape" />
+                Trace Our Milestones
             </a>
         </div>
     </section>

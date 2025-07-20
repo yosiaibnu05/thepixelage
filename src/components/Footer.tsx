@@ -21,7 +21,7 @@ export default function Footer() {
     
 
         // ------ Video Animation ------
-        // The hardest part, is to make the video scale and fade in
+        // The Tricky part, is to make the video scale and fade in
         tl.fromTo(
           '.section-footer .video-wrapper',
           {
@@ -72,27 +72,27 @@ export default function Footer() {
   
 
   return (
-    <section className="section-footer "> 
-     <div className="footer-inner">
-        <div className="video-wrapper">
-            <div className="video-overlay" />
-            <video preload="auto" muted autoPlay loop playsInline>
-            <source src="/assets/videos/video.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-        </div>
-        <div className="footer-text-wrapper">
-            <div className="footer-text d-flex flex-column align-items-center justify-content-center mt-5 text-wrapper">
-                <h2>
-                  Celebrate <span className="text-bold">With Us</span>
-                </h2>
-                <a href="#" className="btn btn-theme shape-appearance light">
-                  <i className="shape" />
-                  Watch Our Celebration
-                </a>
+    <section className="section-footer ">
+        <div className="footer-inner">
+            <div className="video-wrapper">
+                <div className="video-overlay" />
+                <video preload="auto" muted autoPlay loop playsInline>
+                    <source src="/assets/videos/video.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div className="footer-text-wrapper">
+                <div className="footer-text d-flex flex-column align-items-center justify-content-center mt-5 text-wrapper">
+                    <h2>
+                        Celebrate <span className="text-bold">With Us</span>
+                    </h2>
+                    <a href="#" className="btn btn-theme shape-appearance light">
+                        <i className="shape" />
+                        Watch Our Celebration
+                    </a>
+                </div>
             </div>
         </div>
-     </div>
     </section>
   )
 }

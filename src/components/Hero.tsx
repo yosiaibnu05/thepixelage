@@ -52,19 +52,18 @@ export default function Hero() {
 
   return (
     <section className="section-hero" ref={heroRef}>
-      <div className="container-fluid d-flex flex-column align-items-center justify-content-between "
-        style={{ minHeight: '100vh' }}>
-          <div className="text-area">
-              <div ref={heroRef} className="text-wrapper">
-                <h1 className="text-bolder">{splitWords('60 YEARS OF')}</h1>
-                <h1 className="main-color">{splitWords('BUILDING ICONS,')}</h1>
-                <h1>{splitWords('SHAPING SKYLINES')}</h1>
-              </div>
-          </div>
-          <div className="lottie-wrapper">
-            <Lottie animationData={animationData} loop />
-          </div>
-      </div>
+        <div className="container-fluid d-flex flex-column align-items-center justify-content-between" style={{ minHeight: '100vh' }}>
+            <div className="text-area">
+                <div ref={heroRef} className="text-wrapper">
+                    <h1 className="text-bolder">{splitWords('60 YEARS OF')}</h1>
+                    <h1 className="main-color">{splitWords('BUILDING ICONS,')}</h1>
+                    <h1>{splitWords('SHAPING SKYLINES')}</h1>
+                </div>
+            </div>
+            <div className="lottie-wrapper">
+                <Lottie animationData={animationData} loop />
+            </div>
+        </div>
     </section>
   )
 }

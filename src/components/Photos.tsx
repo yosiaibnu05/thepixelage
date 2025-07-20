@@ -12,23 +12,23 @@ export default function Photos() {
 useEffect(() => {
 
     gsap.to("body", {
-        backgroundColor: "#889fb5", // warna saat berubah
+        backgroundColor: "#889fb5", 
         duration: 1,
         scrollTrigger: {
           trigger: ".section-photos",
-          start: "bottom bottom", // saat bagian bawah section menyentuh bagian bawah viewport
-          end: "bottom+=100 top", // scroll 100px setelah keluar viewport
-          scrub: true, // transisi halus
+          start: "bottom bottom", 
+          end: "bottom+=100 top", 
+          scrub: true, 
         },
       });
 
 }
-, []); // Dependency array to run effect only once
+, []);
 
   return (
     <section className="section-photos">
-      <div className="container-fluid">
-          <div className="d-flex justify-content-start flex-column photo-wrapper">
+        <div className="container-fluid">
+            <div className="d-flex justify-content-start flex-column photo-wrapper">
                 <div className="photo-item">
                     <img src="/assets/img/519x788.jpg" height="600px" alt="Photo 1" />
                 </div>
@@ -42,7 +42,7 @@ useEffect(() => {
                     <img src="/assets/img/526x788.jpg" height="600px" alt="Photo 1" />
                 </div>
             </div>
-      </div>
+        </div>
     </section>
   )
 }

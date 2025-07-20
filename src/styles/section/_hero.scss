@@ -14,9 +14,10 @@
         position: relative;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         flex-direction: column;
         overflow: hidden;
+        min-height: 100vh;
 
         .text-wrapper {
             padding: 0px 200px 0px 0px;

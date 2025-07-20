@@ -27,7 +27,7 @@ useEffect(() => {
 
   return (
     <section className="section-photos">
-        <div className="container-fluid">
+        <div className="container-fluid photos-contain">
             <div className="d-flex justify-content-start flex-column photo-wrapper">
                 <div className="photo-item">
                     <img src="/assets/img/519x788.jpg" height="600px" alt="Photo 1" />

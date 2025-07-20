@@ -6,7 +6,7 @@ export default function Milestone() {
   return (
     <section className="section-milestone d-flex justify-content-end">
         <div className="container">
-            <div className="milestone-inner col-lg-6 offset-lg-6">
+            <div className="milestone-inner col-sm-12 col-md- 12 col-lg-6 offset-lg-6">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien 
                     vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.

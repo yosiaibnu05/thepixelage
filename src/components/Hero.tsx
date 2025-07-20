@@ -1,15 +1,16 @@
 'use client'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Lottie from 'lottie-react'
+import animationDataMobile from '@/assets/animations/lottie-428x450.json'
 import animationData from '@/assets/animations/lottie-1366x350.json'
 
 gsap.registerPlugin(ScrollTrigger);
 
-
 export default function Hero() {
   const heroRef = useRef(null)
+  const [isMobile, setIsMobile] = useState(false) 
 
   // ------ Split First ------
   const splitWords = (text: string) => {
@@ -20,6 +21,15 @@ export default function Hero() {
     ))
   }
 
+  // ------ Check if Mobile Device ------
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768)
+    checkMobile()
+    window.addEventListener('resize', checkMobile)
+    return () => window.removeEventListener('resize', checkMobile)
+  }, [])
+
+  // ------ Animation for Hero Section ------
   useEffect(() => {
     const words = gsap.utils.toArray('.word') as HTMLElement[]
 
@@ -55,7 +65,7 @@ export default function Hero() {
 
   return (
     <section className="section-hero" ref={heroRef}>
-        <div className="container-fluid d-flex flex-column align-items-center justify-content-between" style={{ minHeight: '100vh' }}>
+        <div className="container-fluid hero-contain " >
             <div className="text-area">
                 <div className="text-wrapper">
                     <h1 className="text-bolder">{splitWords('60 YEARS OF')}</h1>
@@ -64,7 +74,7 @@ export default function Hero() {
                 </div>
             </div>
             <div className="lottie-wrapper">
-                <Lottie animationData={animationData} loop />
+                <Lottie animationData={isMobile ? animationDataMobile : animationData} loop />
             </div>
         </div>
     </section>

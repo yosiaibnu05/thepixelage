@@ -74,11 +74,11 @@ export default function Footer() {
     <section className="section-footer ">
         <div className="footer-inner">
             <div className="video-wrapper">
-                <div className="video-overlay" />
                 <video preload="auto" muted autoPlay loop playsInline>
                     <source src="/assets/videos/video.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
+                <div className="video-overlay"></div>
             </div>
             <div className="footer-text-wrapper">
                 <div className="footer-text d-flex flex-column align-items-center justify-content-center mt-5 text-wrapper">

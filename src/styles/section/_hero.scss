@@ -9,36 +9,47 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  
-    .text-wrapper {
-        padding: 0px 200px 0px 0px;
-        margin-top: 20vh;
+    
+    .hero-contain {
+        position: relative;
         display: flex;
-        align-items:start;
-        justify-content: start;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
-        
-        h1 {
-            margin-bottom: 0px;
-            line-height: 100%;
-            color: var(--heading-color);
-            span {
-                font-size: 60px;
+        overflow: hidden;
+
+        .text-wrapper {
+            padding: 0px 200px 0px 0px;
+            margin-top: 20vh;
+            display: flex;
+            align-items:start;
+            justify-content: start;
+            flex-direction: column;
+            
+            h1 {
+                margin-bottom: 0px;
+                line-height: 100%;
+                color: var(--heading-color);
+                span {
+                    font-size: 60px;
+                }
             }
+    
+            // ------  Text Animations per word ------
+            .word {
+                display: inline-block;
+                opacity: 0;
+                transform: translateY(20px);
+            }
+     
+        }
+    
+        .lottie-wrapper {
+            margin-top: 2rem;
+            width: 100%;
         }
 
-        // ------  Text Animations per word ------
-        .word {
-            display: inline-block;
-            opacity: 0;
-            transform: translateY(20px);
-        }
- 
     }
-
-    .lottie-wrapper {
-        margin-top: 2rem;
-        width: 100%;
-    }
+   
     
 }

@@ -3,7 +3,7 @@ import '@/styles/styles.scss';
 import { ReactNode } from 'react';
 
 export const metadata: Metadata = {
-  title: 'My Awesome Site',
+  title: 'Technical Test - Yosia Ibnu',
   description: 'Built with Next.js, SCSS, Bootstrap, and GSAP',
 };
 

@@ -12,10 +12,9 @@ export default function Footer() {
           scrollTrigger: {
             trigger: '.section-footer',
             start: 'bottom bottom',
-            end: '+=200',
+            end: '+=700',
             pin: true,
             scrub: true,
-            // markers: true,
           },
         })
     
@@ -26,15 +25,15 @@ export default function Footer() {
           '.section-footer .video-wrapper',
           {
             y: 400,
-            scale: 0.2,
-            opacity: 0,
+            scale: 0,
+            opacity: 0.5,
           },
           {
             y: 0,
             scale: 0.5,
             opacity: 1,
-            duration: 1.5,
-            ease: 'power2.out',
+            duration: 5.5,
+            ease: 'circ.out',
           }
         )
     
@@ -43,13 +42,13 @@ export default function Footer() {
           '.section-footer .footer-text',
           {
             y: 200,
-            opacity: 0,
+            opacity: 0.4,
           },
           {
             y: 0,
             opacity: 1,
-            duration: 1.5,
-            ease: 'power2.out',
+            duration: 5.5,
+            ease: 'circ.out',
           },
           '<' // same time as the previous animation
         )
@@ -59,8 +58,8 @@ export default function Footer() {
           '.section-footer .video-wrapper',
           {
             scale: 1,
-            duration: 1.5,
-            ease: 'power2.out',
+            duration: 5.5,
+            ease: 'circ.out',
           },  
         )
         

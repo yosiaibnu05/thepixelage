@@ -11,7 +11,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Hero() {
   const heroRef = useRef(null)
 
-  // Fungsi untuk membagi kalimat menjadi <span className="word">
+  // ------ Split First ------
   const splitWords = (text: string) => {
     return text.split(' ').map((word, idx) => (
       <span key={idx} className="word">
@@ -45,16 +45,19 @@ export default function Hero() {
         scrub: 0.5,
       },
     })
+
+    // Cleanup
+    return () => {
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill())
+    }
     
-
-
   }, [])
 
   return (
     <section className="section-hero" ref={heroRef}>
         <div className="container-fluid d-flex flex-column align-items-center justify-content-between" style={{ minHeight: '100vh' }}>
             <div className="text-area">
-                <div ref={heroRef} className="text-wrapper">
+                <div className="text-wrapper">
                     <h1 className="text-bolder">{splitWords('60 YEARS OF')}</h1>
                     <h1 className="main-color">{splitWords('BUILDING ICONS,')}</h1>
                     <h1>{splitWords('SHAPING SKYLINES')}</h1>

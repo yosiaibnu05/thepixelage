@@ -1,3 +1,8 @@
+// =================================
+// Hero Section Styles
+// =================================
+
+
 .section-hero {
     min-height: 100vh;
     background-image: url('../../assets/img/background-home.png');
@@ -17,11 +22,12 @@
             margin-bottom: 0px;
             line-height: 100%;
             color: var(--heading-color);
-        }
-        h1 span {
-            font-size: 60px;
+            span {
+                font-size: 60px;
+            }
         }
 
+        // ------  Text Animations per word ------
         .word {
             display: inline-block;
             opacity: 0;

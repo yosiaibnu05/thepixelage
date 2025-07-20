@@ -1,12 +1,9 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 @import "global/_mixins";
 @import "global/_variables";
 @import "global/_global";
-// @import "global/_common";
-// @import "global/_animate";
-// @import "global/smooth-scroll";
+@import "global/smooth-scroll";
 
 @import "section/_hero";
 @import "section/_about";

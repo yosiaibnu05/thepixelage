@@ -66,16 +66,17 @@ useEffect(() => {
         '.shape-appearance',
         {
           opacity: 0,
-          visibility: 'hidden',
+          ease: 'power3.out',
+          duration: 2.5,
         },
         {
           opacity: 1,
           visibility: 'visible',
-          duration: .5,
+          duration: 2.5,
           ease: 'power3.out',
           scrollTrigger: {
             trigger: '.section-milestone',
-            start: 'top center',
+            start: 'top bottom',
             end: 'top center',
             scrub: true,
           },
